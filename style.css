@@ -63,3 +63,8 @@ p {
   display: block;
   text-align: center;
 }
+.link {
+  margin: 0 auto;
+  display: block;
+  color: black;
+}
