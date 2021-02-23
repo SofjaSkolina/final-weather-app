@@ -1,0 +1,65 @@
+.card {
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+}
+.background {
+  background-image: url(images/sunset.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 60px 200px;
+}
+.main-body {
+  background-image: linear-gradient(
+    to top,
+    #505285 0%,
+    #585e92 12%,
+    #65689f 25%,
+    #7474b0 37%,
+    #7e7ebb 50%,
+    #8389c7 62%,
+    #9795d4 75%,
+    #a2a1dc 87%,
+    #b5aee4 100%
+  );
+  box-shadow: inherit;
+}
+h1,
+h2,
+h3,
+h5 {
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+h1 {
+  font-size: 90px;
+  text-transform: capitalize;
+}
+#feeling {
+  text-transform: capitalize;
+}
+
+.cloud {
+  display: block;
+  text-align: center;
+  font-size: 300px;
+}
+.search-box {
+  border-radius: 5px;
+  border: none;
+  background-color: #f1f1f1;
+}
+h5 {
+  text-align: center;
+}
+i {
+  font-size: 60px;
+  display: block;
+  text-align: center;
+  color: white;
+}
+p {
+  color: white;
+  display: block;
+  text-align: center;
+}
