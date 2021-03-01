@@ -1,28 +1,20 @@
 .card {
   border: none;
   box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
-}
-.background {
-  background-image: url(images/sunset.jpg);
-  background-repeat: no-repeat;
+  background-image: url("images/background.jpg");
   height: 100%;
-  padding: 60px 200px;
-}
-.main-body {
-  background-image: linear-gradient(
-    to top,
-    #505285 0%,
-    #585e92 12%,
-    #65689f 25%,
-    #7474b0 37%,
-    #7e7ebb 50%,
-    #8389c7 62%,
-    #9795d4 75%,
-    #a2a1dc 87%,
-    #b5aee4 100%
-  );
   box-shadow: inherit;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(211, 211, 211);
+  background-blend-mode: multiply;
 }
+
 h1,
 h2,
 h3,
@@ -49,8 +41,21 @@ h1 {
   border: none;
   background-color: #f1f1f1;
 }
+.search-button,
+#current-location {
+  border-radius: 5px;
+  background-color: #1e3e50;
+  color: white;
+  border: none;
+}
+
 h5 {
   text-align: center;
+}
+.icon {
+  font-size: 60px;
+
+  color: white;
 }
 i {
   font-size: 60px;
@@ -64,6 +69,7 @@ p {
   text-align: center;
 }
 .link {
+  text-decoration: none;
   margin: 0 auto;
   display: block;
   color: black;

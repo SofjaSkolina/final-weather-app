@@ -11,7 +11,9 @@ let weekdays = [
 let weekday = weekdays[now.getDay()];
 let hour = now.getHours();
 let minutes = now.getMinutes();
-
+if (hour.length === 1) {
+  hour = "0" + hour;
+}
 if (minutes.length === 1) {
   minutes = "0" + minutes;
 }
@@ -33,6 +35,7 @@ function search(event) {
 let units = "metric";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 axios.get(apiUrl).then(showWeather);
+console.log(apiUrl);
 
 }
 let searchButton = document.querySelector("#city-search");
@@ -43,6 +46,12 @@ function showWeather(response) {
   document.querySelector("#temperature").innerHTML = `${Math.round(response.data.main.temp)}°C`;
  document.querySelector("#humidity").innerHTML = `Humidity: ${response.data.main.humidity}%`;
   document.querySelector("#wind").innerHTML = `Wind: ${Math.round(response.data.wind.speed)}km/h`;
+let icon = document.querySelector("#icon");
+ icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
 }
 
     function showPosition(position){
