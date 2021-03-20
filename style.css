@@ -1,12 +1,13 @@
 .card {
   border: none;
   box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
-  background-image: url("images/background.jpg");
+  background-image: url("images/background1.jpg");
   height: 100%;
   box-shadow: inherit;
-  max-width: 600px;
+  max-width: 450px;
   margin: 0 auto;
   margin-top: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,8 +24,17 @@ h5 {
   text-align: center;
   font-weight: normal;
 }
+h2 {
+  text-align: left;
+}
+.current-date {
+  font-size: 20px;
+  text-align: center;
+}
 h1 {
-  font-size: 90px;
+  font-size: 70px;
+  margin-top: 30px;
+
   text-transform: capitalize;
 }
 #feeling {
@@ -49,28 +59,35 @@ h1 {
   border: none;
 }
 
-h5 {
-  text-align: center;
-}
-.icon {
-  font-size: 60px;
-
-  color: white;
-}
-i {
-  font-size: 60px;
-  display: block;
-  text-align: center;
-  color: white;
-}
 p {
   color: white;
   display: block;
   text-align: center;
+  font-size: 20px;
 }
 .link {
   text-decoration: none;
   margin: 0 auto;
   display: block;
   color: black;
+}
+
+#today {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+  width: 170px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+.forecast {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+  margin: 3px;
+  padding: 10px;
+}
+hr {
+  color: white;
 }

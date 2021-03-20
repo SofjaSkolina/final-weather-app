@@ -20,76 +20,41 @@
                 <div class="card">
                     <div class="card-body main-body">
                         <form id="city-search">
-                            <input type="text" placeholder="Type in the city" class="search-box" autocomplete="off" id="search-button" />
+                            <input type="text" placeholder="Type in the city" class="search-box" autocomplete="off" autofocus="on" id="search-button" />
                             
                             <input type="submit" value="Search" class="search-button" />
                             <input type="submit" value="Current location" class="location-buttton" id="current-location" />
                         </form>
                         <h1>
-
-                        </h1>
-                        <h2>
-                            <img src="" alt="weather" id="icon" class="icon">
-                            
-                            <div id="temperature">°C</div>
-                            <div id="humidity"></div>
-                            <div id="wind"></div>
-                            <div id="feeling"></div>
-                        </h2>
-
+                       </h1>              
+            <div class="row">
+                <div class="col-6">
+                           <div id="today">
+                            <span id="current-date" class="current-date"></span>
+                            <br>
+                            <span id="feeling"></span>
+                            <br>
+                               <img src="" alt="weather" id="icon" class="icon">
+                            <br>
+                        
+                         <i class="fas fa-thermometer-half"></i><span id="temperature">°C</span>
+                          <br>
+                           <i class="fas fa-tint"></i><span id="humidity"></span>
+                           <br>
+                            <i class="fas fa-wind"></i><span id="wind"></span>
+                        </div> 
+                        </div>
+                        
+                        </div>
                        
-                        <h3 id="current-date">
-                                            
-                        </h3>
+
+                        
+                        </div>
+                        
                         <hr />
-                        <div class="row">
-                            <div class="col">
-                                <h5>THU <br /></h5>
-                                <i class="fas fa-cloud-sun"></i>
-                                <p>
-                                    20° <br />
-                                    14°
-                                </p>
-                            </div>
-                            <div class="col">
-                                <h5>FRI <br /></h5>
-                                <i class="fas fa-cloud-sun-rain"></i>
-                                <p>
-                                    15° <br />
-                                    10°
-                                </p>
-                            </div>
-                            <div class="col">
-                                <h5>SAT <br /></h5>
-                                <i class="fas fa-cloud"></i>
-                                <p>
-                                    17° <br />
-                                    10°
-                                </p>
-                            </div>
-                            <div class="col">
-                                <h5>SUN <br /></h5>
-                                <i class="fas fa-cloud"></i>
-                                <p>
-                                    19° <br />
-                                    14°
-                                </p>
-                            </div>
-                            <div class="col">
-                                <h5>MON <br /></h5>
-                                <i class="fas fa-cloud-sun"></i>
-                                <p>
-                                    22° <br />
-                                    15°
-                                </p>
-                            </div>
-                            <div class="col">
-                                <h5>TUE <br /></h5>
-                                <i class="fas fa-sun"></i>
-                                <p>
-                                    21° <br />
-                                    15°
-                                </p>
+                        <div class="row forecast" id ="forecast">
+                
+                          
                             </div>
                         </div>
                     </div>
