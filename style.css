@@ -91,3 +91,21 @@ p {
 hr {
   color: white;
 }
+
+#celsius {
+  color: #472e50;
+  text-decoration: none;
+}
+.today .active {
+  color: white;
+  cursor: default;
+  text-decoration: none;
+}
+
+.today .active:hover {
+  text-decoration: none;
+}
+.today .fahrenheit {
+  text-decoration: none;
+  color: #472e50;
+}

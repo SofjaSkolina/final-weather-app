@@ -14,56 +14,43 @@
 </head>
 
 <body>
-    <div class="container">
-       
-            
-                <div class="card">
-                    <div class="card-body main-body">
-                        <form id="city-search">
-                            <input type="text" placeholder="Type in the city" class="search-box" autocomplete="off" autofocus="on" id="search-button" />
-                            
-                            <input type="submit" value="Search" class="search-button" />
-                            <input type="submit" value="Current location" class="location-buttton" id="current-location" />
-                        </form>
-                        <h1>
-                       </h1>              
-            <div class="row">
-                <div class="col-6">
-                           <div id="today">
-                            <span id="current-date" class="current-date"></span>
-                            <br>
-                            <span id="feeling"></span>
-                            <br>
-                               <img src="" alt="weather" id="icon" class="icon">
-                            <br>
-                        
-                         <i class="fas fa-thermometer-half"></i><span id="temperature">°C</span>
-                          <br>
-                           <i class="fas fa-tint"></i><span id="humidity"></span>
-                           <br>
-                            <i class="fas fa-wind"></i><span id="wind"></span>
-                        </div> 
-                        </div>
-                        
-                        </div>
-                       
+<div class="container">         
+<div class="card">
+<div class="card-body main-body">
+    <form id="city-search">
+        <input type="text" placeholder="Type in the city" class="search-box" autocomplete="off" autofocus="on" id="search-button" />             
+        <input type="submit" value="Search" class="search-button" />
+        <input type="submit" value="Current location" class="location-buttton" id="current-location" />
+    </form>
+    <h1>
+    </h1>              
+<div class="row">
+    <div class="col-6">
+        <div class = "today" id="today">
+                <span id="current-date" class="current-date"></span>
+                    <br>
+                <span id="feeling"></span>
+                    <br>
+                <img src="" alt="weather" id="icon" class="icon">
+                    <br>
+                <i class="fas fa-thermometer-half"></i><span id="temperature"></span><span class="units"> <a href="#" id="celsius" class="active">°C</a> | <a href="#" class = "fahrenheit" id="fahrenheit">°F</a></span>
+                    <br>
+                <i class="fas fa-tint"></i><span id="humidity"></span>
+                    <br>
+                <i class="fas fa-wind"></i><span id="wind"></span>
+        </div> 
+    </div>                      
+</div>
+</div>
+    <hr />
+<div class="row forecast" id ="forecast">
 
-                        
-                        </div>
-                        
-                        <hr />
-                        <div class="row forecast" id ="forecast">
-                
-                          
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-   
-    
+        </div>
+    </div>
+</div>
     <p class="link"><a href="https://github.com/SofjaSkolina/final-weather-app">Open-source code </a>by Sofja Skolina</p>
     <script src="script.js"></script>
 </body>
-
 </html>
